@@ -8,7 +8,7 @@ jobs:
     run-on: ubuntu
     steps:
       - name: checkout
-        user: actions/checkout@v2
+        uses: actions/checkout@v2
       - name: Multiline-Command
         run: |
           node -v
