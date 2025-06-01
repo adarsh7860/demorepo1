@@ -1,0 +1,17 @@
+---
+name: test pipeline
+
+on: [push]
+
+jobs: 
+  run-shell-commands:
+    run-on: ubuntu
+    steps:
+      - name: checkout
+        user: actions/checkout@v2
+      - name: Multiline-Command
+        run: |
+          node -v
+          npm -v
+      
+
